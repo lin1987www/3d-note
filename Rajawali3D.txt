@@ -1,0 +1,93 @@
+"Orthogonal is the ROTATION MATRIX, pure rotation matrix, without any scale!"
+ Using the rotations formulas we get only unit vector and they are always orthogonal! 
+
+ But why we want the inverse of rotation matrix? To calculate the lights in the shaders! Remember that the real object never changes, we just change the computation of its vertices by multiplying they by a matrix. So to calculate a light, which is in the global space, we need the inverse of rotation matrix. 
+
+Quaternion
+"Take a vector as a direction and rotate it around own axis!"
+
+
+
+Quaternion
+http://www.songho.ca/math/quaternion/quaternion.html
+
+FOV
+http://www.eng.utah.edu/~cs5600/slides/Wk%205%20Lec09%20perspective%20II.pdf
+
+
+複數帶來新的方向，使得運算沒有交換律存在。
+
+
+四元數 避免 萬用鎖( 2 axis 交疊)
+http://blog.roodo.com/sayaku/archives/19544672.html
+
+Gimbal lock
+https://www.youtube.com/watch?v=zc8b2Jo7mno
+
+
+矩陣基本
+https://www.youtube.com/channel/UCqNEsiwTMiV2Nh9w2J9YHuA
+
+
+480x727  =>  364x363 
+758x455	 =>  228x227
+
+364/727 = 0.50068775790921595598349381017882
+228/455 = 0.5010989010989010989010989010989
+
+so if height is 2, it will fill all height
+
+
+x- ←
+x+ →
+z- 鏡頭前進 ↑
+z+ 鏡頭向後 ↓
+y+ 上↑
+y- 下↓
+
+mEarthSphere = new Sphere(1, 2, 24);
+扁平 球體  ||
+
+
+mEarthSphere = new Sphere(1, 3, 24);
+3面球體  |||
+
+segmentsW  代表垂直線的多寡
+
+
+segmentsH  代表水平線的多寡
+
+
+Meterils 
+
+Transparent ( 透明設定 )
+Diffuse 漫射 ( 關於 反光設定 )
+
+Quaternion 四元數  跟旋轉 rotate 有關
+
+Frustum 視椎
+
+由 Camera 看出去的 垂直面
+vertical field of view (FOV)
+
+Transpose轉置矩陣
+
+逆矩陣 反矩陣 為方程式的解
+
+
+Aspect ratio x / y
+double ratio = ((double) width) / ((double) height);
+
+向量x 共軛 表示
+
+_T    *    
+x    x     
+
+共軛
+_
+x
+
+向量長度
+|| x ||
+
+v1.v2 點積 dot product,  v1 x v2 向量積 cross product
